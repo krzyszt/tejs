@@ -16,6 +16,8 @@ block content
 					a(href=nextMeetup.url).alert-link= nextMeetup._.startDate.format('dddd D MMM YYYY')
 		.page-content.tile.ph-2.pv-2.mb-2
 			+flash-messages(messages)
+			a(href='/keystone').btn.btn-primary Go to Admin Pages
+			hr.mv-2
 			form(method='post', enctype='multipart/form-data', autocomplete='off', novalidate).form-horizontal
 				input(type='hidden', name='action', value='profile.details')
 				h3 Private Info
