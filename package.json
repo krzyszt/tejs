@@ -29,5 +29,9 @@
   },
   "scripts": {
     "start": "keystone.js"
+  },
+  "devDependencies": {
+    "mocha": "^2.1.0",
+    "supertest": "^0.15.0"
   }
 }
