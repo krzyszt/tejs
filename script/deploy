@@ -1,0 +1,9 @@
+#!/bin/sh
+
+ssh app@178.62.44.88 <<EOF
+	cd ~/tejs
+	git pull
+	npm install --production
+	forever restartall
+	exit
+EOF	
