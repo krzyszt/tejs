@@ -1,0 +1,18 @@
+extends ../../layouts/default
+
+include ../../mixins/job
+
+block intro
+	.page-intro: .container
+		h1 Current Jobs
+
+block content
+	.page-content: .container
+		.organisations
+			if jobs.length
+				each jb, i in jobs
+					if i
+						hr
+					+job(jb)
+			else
+				h3.text-muted There are no jobs at the moment.
