@@ -1,0 +1,12 @@
+extends ../../layouts/default
+
+block content
+	.container-sm
+		a(href='/jobs').text-muted &larr; Back to jobs
+		article.full-post
+			if !job
+				h2 Invalid Job.
+			else
+				header
+					h4= job.name
+				!= job.description

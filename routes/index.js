@@ -58,6 +58,7 @@ exports = module.exports = function(app) {
     app.get('/workshops', routes.views.workshops);
     app.get('/workshop/:workshop', routes.views.workshop);
     app.get('/jobs', routes.views.jobs);
+    app.get('/job/:job', routes.views.job);
 	app.get('/links', routes.views.links);
 	app.get('/links/:tag?', routes.views.links);
 	app.all('/links/link/:link', routes.views.link);

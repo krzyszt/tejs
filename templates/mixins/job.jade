@@ -3,6 +3,6 @@ mixin job(jb)
 		.col-sm-3.col-md-2.text-center
 			
 		.col-sm-9.col-md-8
-			h2.org__heading
-				= jb.name
+			h4.org__heading
+				a(href='/job/' + jb.id )= jb.name
 			
