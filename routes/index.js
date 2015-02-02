@@ -56,6 +56,7 @@ exports = module.exports = function(app) {
 	app.get('/member/:member', routes.views.member);
 	app.get('/organisations', routes.views.organisations);
     app.get('/workshops', routes.views.workshops);
+    app.get('/workshop/:workshop', routes.views.workshop);
     app.get('/jobs', routes.views.jobs);
 	app.get('/links', routes.views.links);
 	app.get('/links/:tag?', routes.views.links);
@@ -105,4 +106,4 @@ exports = module.exports = function(app) {
 	app.all('/api/app/signin-service-check', routes.api.app['signin-service-check']);
 	app.all('/api/app/signin-recover', routes.api.app['signin-recover']);
 
-}
+};

@@ -1,0 +1,15 @@
+extends ../../layouts/default
+
+block content
+	.container-sm
+		a(href='/workshops').text-muted &larr; Back to workshops
+		article.full-post
+			if !workshop
+				h2 Invalid Workshop.
+			else
+				header
+					h4= workshop.name
+					
+				if workshop.logo.exists
+					.post-image.mv-3: img(src=post._.image.fit(720,420)).img-responsive.img-thumbnail
+				!= workshop.description

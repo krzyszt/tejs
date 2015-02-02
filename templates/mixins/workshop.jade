@@ -3,6 +3,6 @@ mixin workshop(ws)
 		.col-sm-3.col-md-2.text-center
 			
 		.col-sm-9.col-md-8
-			h2.org__heading
-				= ws.name
+			h4.org__heading
+				a(href='/workshop/' + ws.id )= ws.name
 			
