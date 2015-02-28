@@ -89,6 +89,4 @@ keystone.set('nav', {
 	'links': ['links', 'link-tags', 'link-comments']
 });
 
-keystone.set('port', 80);
-
 keystone.start();
